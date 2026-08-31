@@ -1,141 +1,159 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 void main() {
-    //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-    // to see how IntelliJ IDEA suggests fixing it.
-    IO.println(String.format("Hello and welcome!"));
+//Задача 1
+    int r = 50;
+    byte c = 126;
+    short n = 32767;
+    long m = 9223;
+    float v  = 3.4f;
+    double b = 1.7;
 
-    for (int i = 1; i <= 5; i++) {
-        //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-        // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-        IO.println("i = " + i);
+    System.out.println(r);
+    System.out.println(c);
+    System.out.println(n);
+    System.out.println(m);
+    System.out.println(v);
+    System.out.println(b);
 
-        byte a =1 ;
-        short b = 2 ;
-        int c = 3 ;
-        long d = 4 ;
-        float e = 1f ;
-        double f = 2 ;
-        System.out.println( a );
-        System.out.println( b );
-        System.out.println( c );
-        System.out.println( d );
-        System.out.println( e );
-        System.out.println( f );
+//Задача 2
+    double firstValue = 27.123;
+    long secondValue = 987_678_965_549L;
+    float thirdValue = 2.786f;
+    short fourthValue = 569;
+    int fifthValue = -159;
+    short sixthValue = 27897;
+    byte seventhValue = 67;
 
-        double weight2 = 27.12 ;
-        long days = 987_678_965_549L ;
-        double weight = 2.786f ;
-        short monht = 569 ;
-        short bananas = -159 ;
-        int river = 27897 ;
-        byte apple = 67 ;
-        System.out.println( weight2 );
-        System.out.println( days );
-        System.out.println( weight );
-        System.out.println( monht );
-        System.out.println( bananas );
-        System.out.println( river );
-        System.out.println( apple );
+    System.out.println(firstValue);
+    System.out.println(secondValue);
+    System.out.println(thirdValue);
+    System.out.println(fourthValue);
+    System.out.println(fifthValue);
+    System.out.println(sixthValue);
+    System.out.println(seventhValue);
 
-        byte studyRoom = 23 ;
-        byte studyRoom2 = 27 ;
-        byte studyRoom3 = 30 ;
-        int peopleAll = studyRoom + studyRoom2 + studyRoom3 ;
-        short paperAll = 480 ;
-        int paper = 480 / peopleAll ;
-        System.out.println( " На каждого ученика рассчитано " + paper + " листов бумаги " );
+//Задача 3
+    int ludmila = 23;
+    int anna = 27;
+    int ekaterina  = 30;
+    int itaAll = 480;
+    int p = ludmila + anna + ekaterina;
+    int q = itaAll / p;
+    System.out.println(" всего учеников "+ p );
+    System.out.println(q + " достанется листов каждому ученику ");
 
+//Задача 4
+    // Исходные данные
+    int bottlesInTwoMinutes = 16;
+    int periodInMinutes = 2;
 
-        byte bottles = 16 ;
-        byte minutes = 2 ;
-        byte minute = 16 / 2 ;
-        int time = 20 ;
-        int bottle = minute * 20 ;
-        System.out.println( " За " + time + " машина произвела " + bottle + " штук бутылок " );
+    // Находим производительность в одну минуту
+    int bottlesPerMinute = bottlesInTwoMinutes / periodInMinutes; // 8 бутылок в минуту
 
-        int day = 1440 ;
-        int bottleDay = minute * 1440 ;
-        System.out.println( " За " + day + " машина произвела " + bottleDay + " штук бутылок " );
+    // 1. За 20 минут
+    int minutes20 = 20;
+    int result20Minutes = bottlesPerMinute * minutes20;
+    System.out.println("За 20 минут машина произвела " + result20Minutes + " штук бутылок");
 
-        int dayTry = 1440 * 3 ;
-        int bottleDayTry = minute * dayTry ;
-        System.out.println( " За " + dayTry + " машина произвела " + bottleDayTry + " штук бутылок " );
+    // 2. В сутки (24 часа * 60 минут)
+    int minutesInDay = 24 * 60;
+    int result1Day = bottlesPerMinute * minutesInDay;
+    System.out.println("За сутки машина произвела " + result1Day + " штук бутылок");
 
-        int month = 1440 * 30;
-        int bottleMonth = minute * month ;
-        System.out.println( " За " + month + " машина произвела " + bottleMonth + " штук бутылок " );
+    // 3. За 3 дня
+    int result3Days = result1Day * 3;
+    System.out.println("За 3 дня machine произвела " + result3Days + " штук бутылок");
 
+    // 4. За 1 месяц (принимаем стандартный расчетный месяц за 30 дней)
+    int result1Month = result1Day * 30;
+    System.out.println("За 1 месяц машина произвела " + result1Month + " штук бутылок");
 
+//Задача 5
+    int totalPaint = 120;
+    int whitePerClass = 2;
+    int brownPerClass = 4;
 
+    // Всего краски на один класс
+    int paintPerClass = whitePerClass + brownPerClass; // 6 банок
 
-        byte white = 2 ;
-        byte brown = 4 ;
-        int room = white + brown ;
-        int bottleShoole = 120 ;
-        int roomAll = bottleShoole / room ;
-        int bottleShooleWhite = roomAll * white ;
-        System.out.println( " Всего белой " + bottleShooleWhite + " краски " ) ;
-        int bottleShooleBrown = roomAll * brown ;
-        System.out.println( " Всего коричневой " + bottleShooleBrown + " краски " ) ;
+    // Находим количество классов в школе
+    int totalClasses = totalPaint / paintPerClass;
 
+    // Считаем общее количество банок каждого цвета
+    int totalWhitePaint = totalClasses * whitePerClass;
+    int totalBrownPaint = totalClasses * brownPerClass;
 
-        byte banana = 5 ;
-        byte bananaWeight = 80 ;
-        int bananaWeightGr = banana * bananaWeight ;
-        byte milk = 105 ;
-        byte milkWeight = 2 ;
-        int milkWeightGr = milk * milkWeight ;
-        byte aisCream = 100 ;
-        byte things = 2 ;
-        int aisCreamGr = aisCream * things ;
-        byte egg = 70 ;
-        byte thingsEggs = 4 ;
-        int thingsEggsGr = thingsEggs * things ;
-        int allGr = bananaWeightGr + milkWeightGr + aisCreamGr + thingsEggsGr ;
-        System.out.println( " Спортзавтрак " + allGr + " грамм ");
-        int grKg= 1000 ;
-        float grAllKg = allGr / (float) grKg ;
-        System.out.println( " Спортзавтрак " + grAllKg + " килограмм ");
+    System.out.println("В школе, где " + totalClasses + " классов, нужно " + totalWhitePaint + " банок белой краски и " + totalBrownPaint + " банок коричневой краски.");
+//Задача 6
+// Ингредиенты по условию
+    int bananasCount = 5;
+    int bananaWeight = 80;
 
-        int weightAll = 7000 ;
-        int weightOne = 250 ;
-        int allDays = weightAll / weightOne ;
-        System.out.println( " Понадобиться дней " + allDays + " , что бы терять вес по " + weightOne + " грамм в день" );
+    int milkVolume = 200;
+    int milkWeightPer100ml = 105;
 
+    int iceCreamCount = 2;
+    int iceCreamWeight = 100;
 
-        int weightOneGr = 500 ;
-        int allDaysAll = weightAll / weightOneGr ;
-        System.out.println( " Понадобиться дней " + allDaysAll + " , что бы терять вес по " + weightOneGr + " грамм в день " );
+    int eggsCount = 4;
+    int eggWeight = 70;
 
-        /*текущая зарплата*/
-        int masha = 67760 ;
-        int denis = 83690 ;
-        int kris = 76230 ;
-        /*процент*/
-        double percent = 0.10 ;
-        double newMasha = masha + ( masha * percent ) ;
-        double newMasha12 = newMasha * 12 ;
-        double newMashaDifference = newMasha - masha ;
-        System.out.println( " Маша теперь получает " + newMasha + " рублей ");
-        System.out.println( " Машина зарплата увеличилась на " + newMashaDifference + " рублей ");
+    // Подсчёт веса каждого продукта согласно условию
+    int totalBananasWeight = bananasCount * bananaWeight;
+    int totalMilkWeight = (milkVolume / 100) * milkWeightPer100ml;
+    int totalIceCreamWeight = iceCreamCount * iceCreamWeight;
+    int totalEggsWeight = eggsCount * eggWeight;
 
-        double newDenis = denis + ( denis * percent ) ;
-        double newDenis12 = newDenis * 12 ;
-        double newDenisDifference = newDenis - denis ;
-        System.out.println( " Денис теперь получает " + newDenis + " рублей ");
-        System.out.println( " Дениса зарплата увеличилась на " + newDenisDifference + " рублей ");
+    // Общий вес в граммах
+    int totalWeightInGrams = totalBananasWeight + totalMilkWeight + totalIceCreamWeight + totalEggsWeight;
 
-        double newKris = kris + ( kris * percent ) ;
-        double newKris12 = newKris * 12 ;
-        double newKrisDifference = newKris - kris ;
-        System.out.println( " Кристина теперь получает " + newKris + " рублей ");
-        System.out.println( " Кристинина зарплата увеличилась на " + newKrisDifference + " рублей ");
+    // Перевод в килограммы (делим на 1000.0, чтобы сохранить дробную часть)
+    double totalWeightInKg = totalWeightInGrams / 1000.0;
+
+    System.out.println("Вес спортзавтрака в граммах: " + totalWeightInGrams + " г");
+    System.out.println("Вес спортзавтрака в килограммах: " + totalWeightInKg + " кг");
+//Задача 7
+    int targetLossKg = 7;
+    int minLossPerDayGrams = 250;
+    int maxLossPerDayGrams = 500;
+
+    // Переводим цель похудения из кг в граммы
+    int targetLossGrams = targetLossKg * 1000;
+
+    // Расчет дней для каждого случая
+    int daysAtMinLoss = targetLossGrams /
 
 
+            minLossPerDayGrams;
+    int daysAtMaxLoss = targetLossGrams / maxLossPerDayGrams;
 
+    // Среднее количество дней (среднее арифметическое между максимальным и минимальным сроком)
+    int averageDays = (daysAtMinLoss + daysAtMaxLoss) / 2;
 
+    System.out.println("При потере 250 г в день уйдет: " + daysAtMinLoss + " дней.");
+    System.out.println("При потере 500 г в день уйдет: " + daysAtMaxLoss + " дней.");
+    System.out.println("В среднем на похудение потребуется: " + averageDays + " дней.");
 
+//Задача 8
+    // Текущие зарплаты сотрудников
+    double mashaSalary = 67760;
+    double denisSalary = 83690;
+    double kristinaSalary = 76230;
 
-    }
+    // Процент повышения (10%)
+    double raisePercent = 0.10;
+
+    // Расчет для Маши
+    double mashaNewSalary = mashaSalary + (mashaSalary * raisePercent);
+    double mashaAnnualDifference = (mashaNewSalary - mashaSalary) * 12;
+    System.out.println("Маша теперь получает " + mashaNewSalary + " рублей. Годовой доход вырос на " + mashaAnnualDifference + " рублей.");
+
+    // Расчет для Дениса
+    double denisNewSalary = denisSalary + (denisSalary * raisePercent);
+    double denisAnnualDifference = (denisNewSalary - denisSalary) * 12;
+    System.out.println("Денис теперь получает " + denisNewSalary + " рублей. Годовой доход вырос на " + denisAnnualDifference + " рублей.");
+
+    // Расчет для Кристины
+    double kristinaNewSalary = kristinaSalary + (kristinaSalary * raisePercent);
+    double kristinaAnnualDifference = (kristinaNewSalary - kristinaSalary) * 12;
+    System.out.println("Кристина теперь получает " + kristinaNewSalary + " рублей. Годовой доход вырос на " + kristinaAnnualDifference + " рублей.");
 }
