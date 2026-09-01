@@ -4,7 +4,7 @@ void main() {
     byte c = 126;
     short n = 32767;
     long m = 9223;
-    float v  = 3.4f;
+    float v = 3.4f;
     double b = 1.7;
 
     System.out.println(r);
@@ -34,11 +34,11 @@ void main() {
 //Задача 3
     int ludmila = 23;
     int anna = 27;
-    int ekaterina  = 30;
+    int ekaterina = 30;
     int itaAll = 480;
     int p = ludmila + anna + ekaterina;
     int q = itaAll / p;
-    System.out.println(" всего учеников "+ p );
+    System.out.println(" всего учеников " + p);
     System.out.println(q + " достанется листов каждому ученику ");
 
 //Задача 4
