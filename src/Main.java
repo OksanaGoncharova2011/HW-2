@@ -13,7 +13,7 @@ void main() {
     System.out.println(m);
     System.out.println(v);
     System.out.println(b);
-
+//
 //Задача 2
     double firstValue = 27.123;
     long secondValue = 987_678_965_549L;
