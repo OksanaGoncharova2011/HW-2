@@ -17,7 +17,7 @@ void main() {
 //Задача 2
     double firstValue = 27.123;
     long secondValue = 987_678_965_549L;
-    float thirdValue = 2.786f;
+    double thirdValue = 2.786;
     short fourthValue = 569;
     int fifthValue = -159;
     short sixthValue = 27897;
@@ -127,11 +127,11 @@ void main() {
     int daysAtMaxLoss = targetLossGrams / maxLossPerDayGrams;
 
     // Среднее количество дней (среднее арифметическое между максимальным и минимальным сроком)
-    int averageDays = (daysAtMinLoss + daysAtMaxLoss) / 2;
+    int overageDays = (daysAtMinLoss + daysAtMaxLoss) / 2;
 
     System.out.println("При потере 250 г в день уйдет: " + daysAtMinLoss + " дней.");
     System.out.println("При потере 500 г в день уйдет: " + daysAtMaxLoss + " дней.");
-    System.out.println("В среднем на похудение потребуется: " + averageDays + " дней.");
+    System.out.println("В среднем на похудение потребуется: " + overageDays + " дней.");
 
 //Задача 8
     // Текущие зарплаты сотрудников
